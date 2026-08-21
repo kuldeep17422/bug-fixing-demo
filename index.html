@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bug Fixing Demo</title>
+
+    <!-- BUG: wrong CSS file name -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">FixIT</div>
+
+        <button id="menuBtn">☰ Menu</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">Freelance Developer</span>
+
+                <h1>Website Bug Fixing Service</h1>
+
+                <p>
+                    I fix HTML, CSS and JavaScript problems
+                    and make websites work properly.
+                </p>
+
+                <!-- BUG: wrong button function -->
+                <button onclick="showMessage()">
+                    Get Started
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <!-- BUG: broken image path -->
+                <img src="developer-photo.png" alt="Developer">
+            </div>
+        </section>
+
+
+        <section id="services" class="services">
+            <h2>What I Fix</h2>
+
+            <div class="service-grid">
+
+                <div class="card">
+                    <h3>HTML Bugs</h3>
+                    <p>Fix broken structure and missing elements.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS Bugs</h3>
+                    <p>Fix layout, spacing and responsive problems.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript Bugs</h3>
+                    <p>Fix buttons, forms and JavaScript errors.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Describe your bug"
+                ></textarea>
+
+                <button type="submit">
+                    Send Request
+                </button>
+
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 FixIT Bug Fixing Service</p>
+    </footer>
+
+
+    <!-- BUG: wrong JavaScript file name -->
+    <script src="app.js"></script>
+
+</body>
+</html>
